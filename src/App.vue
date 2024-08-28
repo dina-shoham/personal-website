@@ -51,4 +51,8 @@ import Contents from './components/Contents.vue'
 .section {
   padding: 0rem 1rem 2rem 1rem; /*top right bottom left*/
 }
+
+.container:hover {
+  background-color: rgba(234, 230, 228, 0.4);
+}
 </style>

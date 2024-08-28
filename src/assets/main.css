@@ -37,13 +37,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 p {
   font-weight: 400;
   font-size: 14px;
 }
 
 .container {
-  background-color: rgba(234, 230, 228, 0.4);
+  /* background-color: rgba(234, 230, 228, 0.4); */
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 0.5rem;
 }

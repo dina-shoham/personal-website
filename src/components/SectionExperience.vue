@@ -57,7 +57,7 @@ import Bubble from './Bubble.vue'
           <a
             href="http://www.cdio.org/knowledge-library/documents/student-perceptions-project-based-learning-software-engineering-course"
             target="_blank"
-            >published</a
+            ><u>published</u></a
           >
           in the proceedings of the 16th International International
           Conceive-Design-Implement-Operate (CDIO) Conference.
@@ -73,7 +73,7 @@ import Bubble from './Bubble.vue'
 <style scoped>
 a {
   font-weight: 400;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /*Adapted from https://codepen.io/samerpik/embed/OVKyVZ? */
