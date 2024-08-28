@@ -26,17 +26,16 @@ import SectionExperience from './components/SectionExperience.vue'
 
 <style scoped>
 .sidebar {
-  margin: 0;
-  padding: 0;
   width: 15rem;
+  padding: 1rem;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
 .content {
-  margin-left: 15rem;
-  padding: 1.5rem 1rem 2rem 2rem;
+  margin-left: 17rem;
+  padding: 1rem;
 }
 
 .section {

@@ -6,7 +6,10 @@ import Bubble from './Bubble.vue'
   <div class="container">
     <ul class="timeline">
       <li class="event" data-date="May - Aug 2022">
-        <p><b>Software Development Intern</b>, Nuance Communications</p>
+        <p>
+          <b>Software Development Intern</b>,
+          <a href="https://www.nuance.com/index.html" target="_blank">Nuance Communications</a>
+        </p>
         <p>
           Developed a web application to generate requests to Nuance’s NLP API, allowing team
           members and non-technical users alike to easily test the functionality of Nuance’s Web API
@@ -18,7 +21,10 @@ import Bubble from './Bubble.vue'
       </li>
 
       <li class="event" data-date="May - Aug 2021">
-        <p><b>Junior Software Development Intern</b>, Arolytics</p>
+        <p>
+          <b>Junior Software Development Intern</b>,
+          <a href="https://www.arolytics.com/" target="_blank">Arolytics</a>
+        </p>
         <p>
           Built, tested, updated, and debugged frontend components for Arolytic’s AROviz emissions
           management software.
@@ -39,30 +45,43 @@ import Bubble from './Bubble.vue'
       </li>
 
       <li class="event" data-date="May - Aug 2019">
-        <p><b>Research Intern</b>, University of Calgary Department of Software Engineering</p>
+        <p>
+          <b>Research Intern</b>,
+          <a href="https://schulich.ucalgary.ca/electrical-software" target="_blank"
+            >University of Calgary Department of Software Engineering</a
+          >
+        </p>
         <p>
           Researched, wrote, and presented a peer-reviewed academic paper on project-based learning
-          in software engineering, which was published in the proceedings of the 16th International
-          International Conceive-Design-Implement-Operate (CDIO) Conference.
+          in software engineering, which was
+          <a
+            href="http://www.cdio.org/knowledge-library/documents/student-perceptions-project-based-learning-software-engineering-course"
+            target="_blank"
+            >published</a
+          >
+          in the proceedings of the 16th International International
+          Conceive-Design-Implement-Operate (CDIO) Conference.
         </p>
         <Bubble text="SPSS"></Bubble>
         <Bubble text="LaTeX"></Bubble>
       </li>
     </ul>
-    <p>
-      Download my full CV in
-      <a href="../assets/cv_english.pdf" download="dina_shoham_cv_english"> English</a>
-      or French.
-    </p>
+    <p>Download my full CV in English or French.</p>
   </div>
 </template>
 
 <style scoped>
+a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/*Adapted from https://codepen.io/samerpik/embed/OVKyVZ? */
 .timeline {
   left: 8rem;
   border-left: 2px solid rgb(234, 230, 228);
   position: relative;
-  padding: 1rem 8rem 1rem 1rem;
+  padding: 0rem 8rem 1rem 1rem;
   list-style: none;
   text-align: left;
 }

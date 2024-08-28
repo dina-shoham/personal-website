@@ -10,6 +10,7 @@ defineProps({
   <div class="header">
     <h1>{{ name }}</h1>
     <h2>{{ title }}</h2>
+    <br />
     <Links></Links>
   </div>
 </template>
@@ -18,9 +19,12 @@ defineProps({
 h1,
 h2 {
   text-align: right;
+  line-height: normal;
+  margin: 0;
 }
 
 .header {
+  /* margin: 1rem; */
   float: right;
 }
 </style>
