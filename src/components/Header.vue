@@ -26,5 +26,6 @@ h2 {
 .header {
   /* margin: 1rem; */
   float: right;
+  margin: 0rem 0rem 5rem 0rem;
 }
 </style>

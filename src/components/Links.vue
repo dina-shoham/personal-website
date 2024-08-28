@@ -5,10 +5,10 @@
     <a href="mailto:dina.shoham@gmail.com">
       <img src="../assets/email.png" />
     </a>
-    <a href="https://linkedin.com/in/dina-shoham">
+    <a href="https://linkedin.com/in/dina-shoham" target="_blank">
       <img src="../assets/linkedin.png" />
     </a>
-    <a href="https://github.com/dina-shoham">
+    <a href="https://github.com/dina-shoham" target="_blank">
       <img src="../assets/github.png" />
     </a>
   </div>
