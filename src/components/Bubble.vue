@@ -11,6 +11,7 @@ defineProps({
 
 <style scoped>
 button {
+  background-color: rgb(234, 230, 228);
   padding: 0.4rem 1rem;
   margin: 0rem 0.5rem 1rem 0rem;
   border-radius: 0.75rem;
@@ -20,9 +21,9 @@ button {
   font-weight: 600;
 }
 
-.grey {
+/* .grey {
   background-color: rgb(234, 230, 228);
-}
+} */
 
 .green {
   background-color: rgb(185, 229, 174);

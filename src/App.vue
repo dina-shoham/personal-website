@@ -2,6 +2,7 @@
 import Header from './components/Header.vue'
 import SectionAbout from './components/SectionAbout.vue'
 import SectionSkills from './components/SectionSkills.vue'
+import SectionExperience from './components/SectionExperience.vue'
 </script>
 
 <template>
@@ -15,6 +16,9 @@ import SectionSkills from './components/SectionSkills.vue'
       </div>
       <div class="section">
         <SectionSkills></SectionSkills>
+      </div>
+      <div class="section">
+        <SectionExperience></SectionExperience>
       </div>
     </div>
   </div>
@@ -32,7 +36,7 @@ import SectionSkills from './components/SectionSkills.vue'
 
 .content {
   margin-left: 15rem;
-  padding: 1.5rem 2rem 2rem 2rem;
+  padding: 1.5rem 1rem 2rem 2rem;
 }
 
 .section {
