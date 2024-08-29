@@ -4,12 +4,15 @@
   <div class="icons">
     <a href="mailto:dina.shoham@gmail.com">
       <img src="../assets/email.png" />
+      <img src="../assets/email-red.png" />
     </a>
     <a href="https://linkedin.com/in/dina-shoham" target="_blank">
       <img src="../assets/linkedin.png" />
+      <img src="../assets/linkedin-red.png" />
     </a>
     <a href="https://github.com/dina-shoham" target="_blank">
       <img src="../assets/github.png" />
+      <img src="../assets/github-red.png" />
     </a>
   </div>
 </template>
@@ -17,6 +20,16 @@
 <style>
 .icons {
   float: right;
+}
+
+a img:last-child {
+  display: none;
+}
+a:hover img:last-child {
+  display: inline;
+}
+a:hover img:first-child {
+  display: none;
 }
 
 img {

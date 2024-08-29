@@ -1,5 +1,5 @@
 <script setup>
-import Bubble from './Bubble.vue'
+import Bubble from './BubbleItem.vue'
 </script>
 
 <template>

@@ -1,9 +1,9 @@
 <script setup>
-import Header from './components/Header.vue'
+import Header from './components/PageHeader.vue'
 import SectionAbout from './components/SectionAbout.vue'
 import SectionSkills from './components/SectionSkills.vue'
 import SectionExperience from './components/SectionExperience.vue'
-import Contents from './components/Contents.vue'
+import Contents from './components/SiteContents.vue'
 </script>
 
 <template>
@@ -17,6 +17,7 @@ import Contents from './components/Contents.vue'
           { text: 'Skills', id: 'skills' },
           { text: 'Experience', id: 'experience' }
         ]"
+        :value="true"
       >
       </Contents>
     </div>
@@ -35,6 +36,8 @@ import Contents from './components/Contents.vue'
 </template>
 
 <style scoped>
+@import 'assets/main.css';
+
 .sidebar {
   width: 15rem;
   padding: 1rem;
@@ -46,13 +49,14 @@ import Contents from './components/Contents.vue'
 .content {
   margin-left: 17rem;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 .section {
   padding: 0rem 1rem 2rem 1rem; /*top right bottom left*/
 }
 
-.container:hover {
-  background-color: rgba(234, 230, 228, 0.4);
-}
+/* .container:hover {
+  background-color: var(--hover-color);
+} */
 </style>

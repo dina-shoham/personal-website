@@ -1,5 +1,5 @@
 <script setup>
-import Links from './Links.vue'
+import Links from './ContactIcons.vue'
 defineProps({
   name: { type: String, required: true },
   title: { type: String, required: true }

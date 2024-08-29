@@ -1,5 +1,5 @@
 <script setup>
-import Bubble from './Bubble.vue'
+import Bubble from './BubbleItem.vue'
 </script>
 
 <template>
@@ -8,7 +8,11 @@ import Bubble from './Bubble.vue'
       <li class="event" data-date="May - Aug 2022">
         <p>
           <b>Software Development Intern</b>,
-          <a href="https://www.nuance.com/index.html" target="_blank">Nuance Communications</a>
+          <a href="https://www.nuance.com/index.html" target="_blank"
+            >Nuance Communications
+            <img src="../assets/up-right-arrow.png" />
+            <img src="../assets/up-right-arrow-red.png" />
+          </a>
         </p>
         <p>
           Developed a web application to generate requests to Nuance’s NLP API, allowing team
@@ -23,7 +27,11 @@ import Bubble from './Bubble.vue'
       <li class="event" data-date="May - Aug 2021">
         <p>
           <b>Junior Software Development Intern</b>,
-          <a href="https://www.arolytics.com/" target="_blank">Arolytics</a>
+          <a href="https://www.arolytics.com/" target="_blank"
+            >Arolytics
+            <img src="../assets/up-right-arrow.png" />
+            <img src="../assets/up-right-arrow-red.png" />
+          </a>
         </p>
         <p>
           Built, tested, updated, and debugged frontend components for Arolytic’s AROviz emissions
@@ -48,19 +56,20 @@ import Bubble from './Bubble.vue'
         <p>
           <b>Research Intern</b>,
           <a href="https://schulich.ucalgary.ca/electrical-software" target="_blank"
-            >University of Calgary Department of Software Engineering</a
-          >
+            >University of Calgary Department of Software Engineering
+            <img src="../assets/up-right-arrow.png" />
+            <img src="../assets/up-right-arrow-red.png" />
+          </a>
         </p>
         <p>
           Researched, wrote, and presented a peer-reviewed academic paper on project-based learning
-          in software engineering, which was
+          in software engineering, which was published in the proceedings of the 16th International
+          International Conceive-Design-Implement-Operate (CDIO) Conference (check it out
           <a
             href="http://www.cdio.org/knowledge-library/documents/student-perceptions-project-based-learning-software-engineering-course"
             target="_blank"
-            ><u>published</u></a
-          >
-          in the proceedings of the 16th International International
-          Conceive-Design-Implement-Operate (CDIO) Conference.
+            ><u>here</u> </a
+          >).
         </p>
         <Bubble text="SPSS"></Bubble>
         <Bubble text="LaTeX"></Bubble>
@@ -71,17 +80,36 @@ import Bubble from './Bubble.vue'
 </template>
 
 <style scoped>
+@import '../assets/main.css';
+
 a {
   font-weight: 400;
   /* text-decoration: underline; */
 }
 
+img {
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+a img:last-child {
+  display: none;
+}
+a:hover img:last-child {
+  display: inline;
+}
+a:hover img:first-child {
+  display: none;
+}
+
 /*Adapted from https://codepen.io/samerpik/embed/OVKyVZ? */
 .timeline {
   left: 8rem;
-  border-left: 2px solid rgb(234, 230, 228);
+  border-left: 2px solid var(--accent-color);
   position: relative;
-  padding: 0rem 8rem 1rem 1rem;
+  padding: 0rem 8rem 0rem 1rem;
   list-style: none;
   text-align: left;
 }
@@ -106,7 +134,7 @@ a {
 /*date*/
 .timeline .event:before {
   left: -10rem;
-  color: #000;
+  /* color: #000; */
   content: attr(data-date);
   text-align: right;
   font-size: 14px;
@@ -117,7 +145,7 @@ a {
 /*dots*/
 .timeline .event:after {
   left: -1.3rem;
-  background: #212121;
+  background: var(--accent-color);
   border-radius: 50%;
   height: 0.5rem;
   width: 0.5rem;
