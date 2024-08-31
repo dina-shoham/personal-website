@@ -15,11 +15,10 @@ import SectionProjects from './components/SectionProjects.vue'
       <Contents
         :items="[
           { text: 'About', id: 'about' },
-          { text: 'Skills', id: 'skills' },
           { text: 'Experience', id: 'experience' },
+          { text: 'Skills', id: 'skills' },
           { text: 'Projects', id: 'projects' }
         ]"
-        :value="true"
       >
       </Contents>
     </div>
@@ -27,12 +26,15 @@ import SectionProjects from './components/SectionProjects.vue'
       <div class="section" id="about">
         <SectionAbout></SectionAbout>
       </div>
-      <div class="section" id="skills">
-        <SectionSkills></SectionSkills>
-      </div>
+      <hr />
       <div class="section" id="experience">
         <SectionExperience></SectionExperience>
       </div>
+      <hr />
+      <div class="section" id="skills">
+        <SectionSkills></SectionSkills>
+      </div>
+      <hr />
       <div class="section" id="projects">
         <SectionProjects></SectionProjects>
       </div>
@@ -59,6 +61,16 @@ import SectionProjects from './components/SectionProjects.vue'
 
 .section {
   padding: 0rem 1rem 2rem 1rem; /*top right bottom left*/
+}
+
+/*red horiz lines*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--accent-color);
+  margin: 0rem 1rem 2rem 1rem;
+  padding: 0;
 }
 
 /* .container:hover {

@@ -75,7 +75,12 @@ import Bubble from './BubbleItem.vue'
         <Bubble text="LaTeX"></Bubble>
       </li>
     </ul>
-    <p>Download my full CV in English or French.</p>
+    <p>
+      Download my full CV in
+      <a href="../../public/dina_shoham_cv_f2024_english.pdf" target="_blank" :download>English</a>
+      or
+      <a href="../../public/dina_shoham_cv_f2024_francais.pdf" target="_blank" :download>French</a>.
+    </p>
   </div>
 </template>
 
