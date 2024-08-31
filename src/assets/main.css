@@ -15,10 +15,11 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  width: 100%;
+  background-color: var(--background-color);
 }
 
 #app {
-  background-color: var(--background-color);
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;

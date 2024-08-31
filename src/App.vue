@@ -1,9 +1,10 @@
 <script setup>
 import Header from './components/PageHeader.vue'
+import Contents from './components/SiteContents.vue'
 import SectionAbout from './components/SectionAbout.vue'
 import SectionSkills from './components/SectionSkills.vue'
 import SectionExperience from './components/SectionExperience.vue'
-import Contents from './components/SiteContents.vue'
+import SectionProjects from './components/SectionProjects.vue'
 </script>
 
 <template>
@@ -15,7 +16,8 @@ import Contents from './components/SiteContents.vue'
         :items="[
           { text: 'About', id: 'about' },
           { text: 'Skills', id: 'skills' },
-          { text: 'Experience', id: 'experience' }
+          { text: 'Experience', id: 'experience' },
+          { text: 'Projects', id: 'projects' }
         ]"
         :value="true"
       >
@@ -30,6 +32,9 @@ import Contents from './components/SiteContents.vue'
       </div>
       <div class="section" id="experience">
         <SectionExperience></SectionExperience>
+      </div>
+      <div class="section" id="projects">
+        <SectionProjects></SectionProjects>
       </div>
     </div>
   </div>
