@@ -10,8 +10,8 @@ import Bubble from './BubbleItem.vue'
           <b>Software Development Intern</b>,
           <a href="https://www.nuance.com/index.html" target="_blank"
             >Nuance Communications
-            <img src="../assets/arrow-black.png" />
-            <img src="../assets/arrow-red.png" />
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
           </a>
         </p>
         <p>
@@ -29,8 +29,8 @@ import Bubble from './BubbleItem.vue'
           <b>Junior Software Development Intern</b>,
           <a href="https://www.arolytics.com/" target="_blank"
             >Arolytics
-            <img src="../assets/arrow-black.png" />
-            <img src="../assets/arrow-red.png" />
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
           </a>
         </p>
         <p>
@@ -57,8 +57,8 @@ import Bubble from './BubbleItem.vue'
           <b>Research Intern</b>,
           <a href="https://schulich.ucalgary.ca/electrical-software" target="_blank"
             >University of Calgary Department of Software Engineering
-            <img src="../assets/arrow-black.png" />
-            <img src="../assets/arrow-red.png" />
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
           </a>
         </p>
         <p>
@@ -77,15 +77,15 @@ import Bubble from './BubbleItem.vue'
     </ul>
     <p>
       Download my full CV in
-      <a href="../../public/dina_shoham_cv_f2024_english.pdf" target="_blank" :download>English</a>
+      <a href="/public/dina_shoham_cv_f2024_english.pdf" target="_blank" :download>English</a>
       or
-      <a href="../../public/dina_shoham_cv_f2024_francais.pdf" target="_blank" :download>French</a>.
+      <a href="/public/dina_shoham_cv_f2024_francais.pdf" target="_blank" :download>French</a>.
     </p>
   </div>
 </template>
 
 <style scoped>
-@import '../assets/main.css';
+@import '/src/assets/main.css';
 
 a {
   font-weight: 400;

@@ -43,7 +43,7 @@ import SectionProjects from './components/SectionProjects.vue'
 </template>
 
 <style scoped>
-@import 'assets/main.css';
+@import '/src/assets/main.css';
 
 .sidebar {
   width: 15rem;

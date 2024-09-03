@@ -49,7 +49,7 @@ function setCurrentSection(section) {
 </template>
 
 <style>
-@import '../assets/main.css';
+@import '/src/assets/main.css';
 
 .content-li {
   list-style-type: none;

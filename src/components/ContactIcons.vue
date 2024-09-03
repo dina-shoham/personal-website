@@ -3,16 +3,16 @@
 <template>
   <div class="icons">
     <a href="mailto:dina.shoham@gmail.com">
-      <img src="../assets/email.png" />
-      <img src="../assets/email-red.png" />
+      <img src="/src/assets/email.png" />
+      <img src="/src/assets/email-red.png" />
     </a>
     <a href="https://linkedin.com/in/dina-shoham" target="_blank">
-      <img src="../assets/linkedin.png" />
-      <img src="../assets/linkedin-red.png" />
+      <img src="/src/assets/linkedin.png" />
+      <img src="/src/assets/linkedin-red.png" />
     </a>
     <a href="https://github.com/dina-shoham" target="_blank">
-      <img src="../assets/github.png" />
-      <img src="../assets/github-red.png" />
+      <img src="/src/assets/github.png" />
+      <img src="/src/assets/github-red.png" />
     </a>
   </div>
 </template>

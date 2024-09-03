@@ -6,7 +6,7 @@ import BubbleItem from './BubbleItem.vue'
   <div class="container">
     <div class="project">
       <div class="project-col">
-        <img class="project-img" src="../assets/le-wordle.png" />
+        <img class="project-img" src="/src/assets/le-wordle.png" />
       </div>
       <div class="project-col">
         <h3>Le Wordle</h3>
@@ -25,7 +25,7 @@ import BubbleItem from './BubbleItem.vue'
     </div>
     <div class="project">
       <div class="project-col">
-        <img class="project-img" src="../assets/portfolio.png" />
+        <img class="project-img" src="/src/assets/portfolio.png" />
       </div>
       <div class="project-col">
         <h3>Personal Website</h3>
@@ -34,13 +34,13 @@ import BubbleItem from './BubbleItem.vue'
         <BubbleItem text="Vue" />
         <p>
           You're visiting it right now! You can also check out the source code on
-          <a href="***" target="_blank">Github</a>.
+          <a href="https://github.com/dina-shoham/personal-website" target="_blank">Github</a>.
         </p>
       </div>
     </div>
     <div class="project">
       <div class="project-col">
-        <img class="project-img" src="../assets/art-gallery.png" />
+        <img class="project-img" src="/src/assets/art-gallery.png" />
       </div>
       <div class="project-col">
         <h3>Art Gallery Website</h3>
