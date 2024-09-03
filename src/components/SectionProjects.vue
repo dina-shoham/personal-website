@@ -25,6 +25,21 @@ import BubbleItem from './BubbleItem.vue'
     </div>
     <div class="project">
       <div class="project-col">
+        <img class="project-img" src="../assets/portfolio.png" />
+      </div>
+      <div class="project-col">
+        <h3>Personal Website</h3>
+        <p>A simple and (relatively) static personal portfolio website.</p>
+        <BubbleItem text="JavaScript" />
+        <BubbleItem text="Vue" />
+        <p>
+          You're visiting it right now! You can also check out the source code on
+          <a href="***" target="_blank">Github</a>.
+        </p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-col">
         <img class="project-img" src="../assets/art-gallery.png" />
       </div>
       <div class="project-col">
