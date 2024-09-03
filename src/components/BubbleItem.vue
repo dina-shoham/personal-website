@@ -10,8 +10,11 @@ defineProps({
 </template>
 
 <style scoped>
+@import '/src/assets/main.css';
+
 button {
-  background-color: rgb(234, 230, 228);
+  color: var(--main-color);
+  background-color: var(--bubble-color);
   padding: 0.4rem 1rem;
   margin: 0rem 0.5rem 1rem 0rem;
   border-radius: 0.75rem;
@@ -20,10 +23,6 @@ button {
   font-size: 12px;
   font-weight: 600;
 }
-
-/* .grey {
-  background-color: rgb(234, 230, 228);
-} */
 
 .green {
   background-color: rgb(185, 229, 174);
