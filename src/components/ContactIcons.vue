@@ -19,7 +19,8 @@
 
 <style>
 .icons {
-  float: right;
+  display: flex;
+  justify-content: center;
 }
 
 a img:last-child {
@@ -32,9 +33,15 @@ a:hover img:first-child {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .icons {
+    float: right;
+  }
+}
+
 img {
   width: 1.5rem;
   height: 1.5rem;
-  margin: 0.5rem;
+  margin: 0rem 0.5rem 1rem 0.5rem;
 }
 </style>

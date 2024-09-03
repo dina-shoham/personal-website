@@ -79,6 +79,12 @@ import BubbleItem from './BubbleItem.vue'
 
 .project {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .project {
+    flex-direction: row;
+  }
 }
 </style>

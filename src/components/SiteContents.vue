@@ -1,7 +1,6 @@
 <script setup>
 defineProps({
-  items: { type: Array, required: true },
-  value: { type: Boolean, required: true }
+  items: { type: Array, required: true }
 })
 </script>
 
@@ -33,7 +32,6 @@ function setCurrentSection(section) {
       document.getElementById('Projects').style.color = '#b4270d'
       break
   }
-  console.log('here')
 }
 </script>
 

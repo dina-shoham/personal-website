@@ -16,16 +16,27 @@ defineProps({
 </template>
 
 <style scoped>
+.header {
+  float: center;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
 h1,
 h2 {
-  text-align: right;
+  text-align: center;
   line-height: normal;
   margin: 0;
 }
 
-.header {
-  /* margin: 1rem; */
-  float: right;
-  margin: 0rem 0rem 5rem 0rem;
+@media only screen and (min-width: 768px) {
+  .header {
+    float: right;
+    margin: 0rem 0rem 5rem 0rem;
+  }
+
+  h1,
+  h2 {
+    text-align: right;
+  }
 }
 </style>
