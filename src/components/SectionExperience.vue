@@ -10,8 +10,8 @@ import Bubble from './BubbleItem.vue'
           <b>Software Development Intern</b>,
           <a href="https://www.nuance.com/index.html" target="_blank"
             >Nuance Communications
-            <img src="../assets/up-right-arrow.png" />
-            <img src="../assets/up-right-arrow-red.png" />
+            <img src="../assets/arrow-black.png" />
+            <img src="../assets/arrow-red.png" />
           </a>
         </p>
         <p>
@@ -29,8 +29,8 @@ import Bubble from './BubbleItem.vue'
           <b>Junior Software Development Intern</b>,
           <a href="https://www.arolytics.com/" target="_blank"
             >Arolytics
-            <img src="../assets/up-right-arrow.png" />
-            <img src="../assets/up-right-arrow-red.png" />
+            <img src="../assets/arrow-black.png" />
+            <img src="../assets/arrow-red.png" />
           </a>
         </p>
         <p>
@@ -57,8 +57,8 @@ import Bubble from './BubbleItem.vue'
           <b>Research Intern</b>,
           <a href="https://schulich.ucalgary.ca/electrical-software" target="_blank"
             >University of Calgary Department of Software Engineering
-            <img src="../assets/up-right-arrow.png" />
-            <img src="../assets/up-right-arrow-red.png" />
+            <img src="../assets/arrow-black.png" />
+            <img src="../assets/arrow-red.png" />
           </a>
         </p>
         <p>
