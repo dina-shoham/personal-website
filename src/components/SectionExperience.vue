@@ -117,6 +117,7 @@ a:hover img:first-child {
   padding: 0rem 8rem 0rem 1rem;
   list-style: none;
   text-align: left;
+  width: (100% - 8rem);
 }
 
 .timeline .event {
@@ -156,5 +157,12 @@ a:hover img:first-child {
   width: 0.5rem;
   content: '';
   top: 0.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline {
+    left: 8rem;
+    padding: 0rem 8rem 0rem 1rem;
+  }
 }
 </style>
