@@ -13,6 +13,7 @@ defineProps({
 @import '/src/assets/main.css';
 
 button {
+  -webkit-appearance: none;
   color: black !important;
   background-color: var(--bubble-color);
   padding: 0.4rem 1rem;

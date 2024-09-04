@@ -12,8 +12,8 @@
 
 html,
 body {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0px;
+  padding: 0px;
   scroll-behavior: smooth;
   width: 100%;
   background-color: var(--background-color);
@@ -26,7 +26,7 @@ body {
 
 #app {
   max-width: 1280px;
-  margin: 0rem;
+  margin: 0px;
   padding: 1rem 0rem;
   font-weight: 400;
   font-family: 'Inter';
