@@ -13,10 +13,12 @@ defineProps({
 @import '/src/assets/main.css';
 
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  /* trying to fix blue button text on ios */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
   color: black !important;
+
   background-color: var(--bubble-color);
   padding: 0.4rem 1rem;
   margin: 0rem 0.5rem 1rem 0rem;
