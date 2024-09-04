@@ -14,6 +14,8 @@ defineProps({
 
 button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: black !important;
   background-color: var(--bubble-color);
   padding: 0.4rem 1rem;
