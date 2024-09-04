@@ -14,9 +14,9 @@ defineProps({
 
 button {
   /* trying to fix blue button text on ios */
+  /* appearance: none !important; */
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  appearance: none !important;
   color: black !important;
 
   background-color: var(--bubble-color);
