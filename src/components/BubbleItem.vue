@@ -13,7 +13,7 @@ defineProps({
 @import '/src/assets/main.css';
 
 button {
-  color: var(--main-color);
+  color: black !important;
   background-color: var(--bubble-color);
   padding: 0.4rem 1rem;
   margin: 0rem 0.5rem 1rem 0rem;
@@ -25,10 +25,12 @@ button {
 }
 
 .green {
+  color: black;
   background-color: rgb(185, 229, 174);
 }
 
 .yellow {
+  color: black;
   background-color: rgb(255, 234, 167);
 }
 </style>
