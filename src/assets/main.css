@@ -26,8 +26,8 @@ body {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem 0.5rem;
+  margin: 0rem;
+  padding: 1rem 0rem;
   font-weight: 400;
   font-family: 'Inter';
   color: var(--main-color);
@@ -74,7 +74,7 @@ p {
 
 .container {
   background-color: var(--container-color);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
 }
 

@@ -78,7 +78,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid var(--accent-color);
-  margin: 0rem 1rem 0rem 1rem;
+  margin: 0rem 0.5rem;
   padding: 0;
 }
 
@@ -101,8 +101,8 @@ hr {
   text-align: left;
   color: var(--accent-color);
   background-color: var(--background-color);
-  padding: 1rem 0rem 1rem 0rem;
-  margin: 0rem 0.9rem;
+  padding: 0.5rem 0rem;
+  margin: 0rem 0.5rem;
   z-index: 1;
   width: 100%;
   position: sticky;
