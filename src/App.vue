@@ -5,56 +5,83 @@ import SectionAbout from './components/SectionAbout.vue'
 import SectionSkills from './components/SectionSkills.vue'
 import SectionExperience from './components/SectionExperience.vue'
 import SectionProjects from './components/SectionProjects.vue'
+import LanguageToggle from './components/LanguageToggle.vue'
+
+import { ref } from 'vue'
+
+const isFrench = ref(false)
 </script>
 
 <template>
   <div class="page">
+    <!-- headers/sidebars -->
+    <!-- mobile header (title + headline + lang toggle) -->
     <div class="header-mobile">
       <div>
-        <Header name="Dina Shoham" title="Software Engineer"></Header>
+        <Header :is-french="isFrench"></Header>
+        <br />
+        <LanguageToggle v-model="isFrench" />
+        <br />
       </div>
       <hr class="hr-desktop" />
     </div>
+    <!-- desktop sidebar (title + headline + contents + lang toggle) -->
     <div class="sidebar-desktop">
-      <Header name="Dina Shoham" title="Software Engineer"></Header>
+      <Header :is-french="isFrench"></Header>
       <br />
       <Contents
+        :is-french="isFrench"
         :items="[
-          { text: 'About', id: 'about' },
-          { text: 'Experience', id: 'experience' },
-          { text: 'Skills', id: 'skills' },
-          { text: 'Projects', id: 'projects' }
+          { textEN: 'About', textFR: 'À Propos', id: 'about' },
+          { textEN: 'Experience', textFR: 'Expérience', id: 'experience' },
+          { textEN: 'Skills', textFR: 'Compétences', id: 'skills' },
+          { textEN: 'Projects', textFR: 'Projets', id: 'projects' }
         ]"
       >
       </Contents>
+      <br />
+      <LanguageToggle v-model="isFrench" />
     </div>
+
+    <!-- content -->
     <div class="content">
+      <!-- about -->
       <div class="section" id="about">
         <div class="mobile-section-header">
-          <h2><span>About</span></h2>
+          <h2 v-show="!isFrench"><span>About</span></h2>
+          <h2 v-show="isFrench"><span>À Propos</span></h2>
         </div>
-        <SectionAbout></SectionAbout>
+        <SectionAbout :is-french="isFrench"></SectionAbout>
       </div>
+      <!-- line -->
       <hr class="hr-desktop" />
+      <!-- experience -->
       <div class="section" id="experience">
         <div class="mobile-section-header">
-          <h2><span>Experience</span></h2>
+          <h2 v-show="!isFrench"><span>Experience</span></h2>
+          <h2 v-show="isFrench"><span>Expérience</span></h2>
         </div>
-        <SectionExperience></SectionExperience>
+        <SectionExperience :is-french="isFrench"></SectionExperience>
       </div>
+      <!-- line -->
       <hr class="hr-desktop" />
+      <!-- skills -->
       <div class="section" id="skills">
         <div class="mobile-section-header">
-          <h2><span>Skills</span></h2>
+          <h2 v-show="!isFrench"><span>Skills</span></h2>
+          <h2 v-show="isFrench"><span>Compétences</span></h2>
         </div>
-        <SectionSkills></SectionSkills>
+        <SectionSkills :is-french="isFrench"></SectionSkills>
       </div>
+      <!-- line -->
       <hr class="hr-desktop" />
+      <!-- projects -->
       <div class="section" id="projects">
         <div class="mobile-section-header">
-          <h2><span>Projects</span></h2>
+          <h2 v-show="!isFrench"><span>Projects</span></h2>
+          <h2 v-show="isFrench"><span>Projets</span></h2>
         </div>
-        <SectionProjects></SectionProjects>
+        <SectionProjects :is-french="isFrench"></SectionProjects>
       </div>
     </div>
   </div>
@@ -62,6 +89,10 @@ import SectionProjects from './components/SectionProjects.vue'
 
 <style scoped>
 @import '/src/assets/main.css';
+
+#en {
+  display: none;
+}
 
 .section {
   padding: 0rem 1rem 2rem 1rem; /*top right bottom left*/
@@ -103,10 +134,10 @@ hr {
   background-color: var(--background-color);
   padding: 0.5rem 0rem;
   margin: 0rem 0.5rem;
-  z-index: 1;
   width: 100%;
+  /* top: 0;
   position: sticky;
-  top: 0;
+  position: -webkit-sticky; */
 }
 
 h2 {
@@ -122,7 +153,8 @@ h2 span {
 }
 
 @media only screen and (min-width: 768px) {
-  .header-mobile {
+  .header-mobile,
+  .footer-mobile {
     display: none;
   }
 

@@ -1,15 +1,15 @@
 <script setup>
 import Links from './ContactIcons.vue'
 defineProps({
-  name: { type: String, required: true },
-  title: { type: String, required: true }
+  isFrench: { type: Boolean, required: true }
 })
 </script>
 
 <template>
   <div class="header">
-    <h1>{{ name }}</h1>
-    <h2>{{ title }}</h2>
+    <h1>Dina Shoham</h1>
+    <h2 v-show="!isFrench">Software Engineer</h2>
+    <h2 v-show="isFrench">Ingénieure Logiciel</h2>
     <br />
     <Links></Links>
   </div>
@@ -30,6 +30,7 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .header {
+    width: 100%;
     float: right;
     margin: 0rem 0rem 5rem 0rem;
   }

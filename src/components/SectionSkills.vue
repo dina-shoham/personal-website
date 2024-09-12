@@ -1,11 +1,16 @@
 <script setup>
 import Bubble from './BubbleItem.vue'
+
+defineProps({
+  isFrench: { type: Boolean, required: true }
+})
 </script>
 
 <template>
   <div class="container">
     <div>
-      <h3>Programming Languages</h3>
+      <h3 v-show="!isFrench">Programming Languages</h3>
+      <h3 v-show="isFrench">Langages de programmation</h3>
     </div>
     <div>
       <Bubble text="JavaScript" colour="green"></Bubble>
@@ -21,7 +26,8 @@ import Bubble from './BubbleItem.vue'
       <Bubble text="SQL" colour="yellow"></Bubble>
     </div>
     <div>
-      <h3>Libraries and Frameworks</h3>
+      <h3 v-show="!isFrench">Libraries and Frameworks</h3>
+      <h3 v-show="isFrench">Bibliothèques et Frameworks</h3>
     </div>
     <div>
       <Bubble text="React"></Bubble>

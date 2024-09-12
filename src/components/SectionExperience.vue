@@ -1,10 +1,14 @@
 <script setup>
 import Bubble from './BubbleItem.vue'
+
+defineProps({
+  isFrench: { type: Boolean, required: true }
+})
 </script>
 
 <template>
   <div class="container">
-    <ul class="timeline">
+    <ul v-show="!isFrench" class="timeline">
       <li class="event" data-date="May - Aug 2022">
         <p>
           <b>Software Development Intern</b>,
@@ -75,11 +79,109 @@ import Bubble from './BubbleItem.vue'
         <Bubble text="LaTeX"></Bubble>
       </li>
     </ul>
-    <p>
+
+    <ul class="timeline" v-show="isFrench">
+      <li class="event" data-date="Mai - Août 2022">
+        <p>
+          <b>Stagiaire Développeur Logiciel</b>,
+          <a href="https://www.nuance.com/index.html" target="_blank"
+            >Nuance Communications
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
+          </a>
+        </p>
+        <p>
+          Développement d’une application web pour créer des requêtes à l’API de Nuance, permettant
+          des membres de l’équipe et des utilisateurs non-techniques de tester facilement le
+          fonctionnement du Web API Gateway dans le navigateur.
+        </p>
+        <Bubble text="React"></Bubble>
+        <Bubble text="TypeScript"></Bubble>
+        <Bubble text="gRPC-Web"></Bubble>
+      </li>
+
+      <li class="event" data-date="Mai - Août 2021">
+        <p>
+          <b>Stagiaire Développeur Logiciel Junior</b>,
+          <a href="https://www.arolytics.com/" target="_blank"
+            >Arolytics
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
+          </a>
+        </p>
+        <p>
+          Création, actualisation, débogage, et rédaction de tests pour les composants du frontend
+          d’AROviz, le logiciel de gestion des émissions d’Arolytics.
+        </p>
+        <Bubble text="React"></Bubble>
+        <Bubble text="JavaScript"></Bubble>
+        <Bubble text="Jest"></Bubble>
+        <Bubble text="React Testing Library"></Bubble>
+        <p>
+          Développement d’un script shell pour générer des rapports de consultation pour des clients
+          en utilisant du code pour la modélisation des emissions et du texte pré-écrit, économisant
+          ainsi de nombreuses heures du travail en automisant ce processus.
+        </p>
+        <Bubble text="Bash"></Bubble>
+        <Bubble text="HTML"></Bubble>
+        <Bubble text="R"></Bubble>
+        <Bubble text="R Markdown"></Bubble>
+      </li>
+
+      <li class="event" data-date="Mai - Août 2019">
+        <p>
+          <b>Stagiaire de Recherche</b>,
+          <a href="https://schulich.ucalgary.ca/electrical-software" target="_blank"
+            >Université de Calgary, Département d’Ingénierie
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
+          </a>
+        </p>
+        <p>
+          Recherche, rédaction, et présentation d’un document de recherche revu par des pairs à
+          propos des méthodes d’apprentissage dans le contexte d’ingénierie logicielle, publié dans
+          les actes de congrès de la 16ème International CDIO Conference (Conférence internationale
+          de “Imaginer-Concevoir-Réaliser-Exploiter”) (lis-le
+          <a
+            href="http://www.cdio.org/knowledge-library/documents/student-perceptions-project-based-learning-software-engineering-course"
+            target="_blank"
+            ><u>ici</u> </a
+          >).
+        </p>
+        <Bubble text="SPSS"></Bubble>
+        <Bubble text="LaTeX"></Bubble>
+      </li>
+    </ul>
+
+    <p v-show="!isFrench">
       Download my full CV in
-      <a href="/public/dina_shoham_cv_f2024_english.pdf" target="_blank" :download>English</a>
+      <a
+        href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_english.pdf"
+        target="_blank"
+        >English</a
+      >
       or
-      <a href="/public/dina_shoham_cv_f2024_francais.pdf" target="_blank" :download>French</a>.
+      <a
+        href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_francais.pdf"
+        target="_blank"
+        >French</a
+      >.
+    </p>
+
+    <p v-show="isFrench">
+      Téléchargez mon CV en
+      <a
+        href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_francais.pdf"
+        target="_blank"
+        >français</a
+      >
+      ou en
+      <a
+        href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_english.pdf"
+        target="_blank"
+        >anglais</a
+      >
+      .
     </p>
   </div>
 </template>
