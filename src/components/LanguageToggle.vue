@@ -4,20 +4,28 @@ import { onMounted } from 'vue'
 const lang = defineModel()
 
 function styleLanguages(isFrench) {
+  console.log('styler')
   if (isFrench) {
-    document.getElementById('en').style.fontWeight = '400'
-    document.getElementById('en').style.color = '#000'
-    document.getElementById('fr').style.fontWeight = '700'
-    document.getElementById('fr').style.color = '#b4270d'
+    console.log('is french')
+    console.log(document.getElementById('en-button'))
+    console.log(document.getElementById('fr-button'))
+    document.getElementById('en-button').style.fontWeight = '400'
+    document.getElementById('en-button').style.color = '#000'
+    document.getElementById('fr-button').style.fontWeight = '700'
+    document.getElementById('fr-button').style.color = '#b4270d'
   } else {
-    document.getElementById('en').style.fontWeight = '700'
-    document.getElementById('en').style.color = '#b4270d'
-    document.getElementById('fr').style.fontWeight = '400'
-    document.getElementById('fr').style.color = '#000'
+    console.log('is english')
+    console.log(document.getElementById('en-button'))
+    console.log(document.getElementById('fr-button'))
+    document.getElementById('en-button').style.fontWeight = '700'
+    document.getElementById('en-button').style.color = '#b4270d'
+    document.getElementById('fr-button').style.fontWeight = '400'
+    document.getElementById('fr-button').style.color = '#000'
   }
 }
 
 function setIsFrench(bool) {
+  console.log('setter')
   lang.value = bool
   styleLanguages(bool)
 }
@@ -29,9 +37,9 @@ onMounted(() => {
 
 <template>
   <div class="language-toggle">
-    <a id="en" @click="setIsFrench(false)">EN</a>
+    <a id="en-button" @click="setIsFrench(false)">EN</a>
     <span> | </span>
-    <a id="fr" @click="setIsFrench(true)">FR</a>
+    <a id="fr-button" @click="setIsFrench(true)">FR</a>
   </div>
 </template>
 

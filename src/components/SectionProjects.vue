@@ -26,13 +26,16 @@ defineProps({
         <BubbleItem text="React" />
         <p v-show="!isFrench">
           Check out the source code on
-          <a href="https://github.com/dina-shoham/le-wordle" target="_blank">Github</a>, or try it
-          out <a href="https://shoham.ca/dina/le-wordle/" target="_blank">here</a>.
+          <a href="https://github.com/dina-shoham/le-wordle" target="_blank"><u>Github</u></a
+          >, or try it out
+          <a href="https://shoham.ca/dina/le-wordle/" target="_blank"><u>here</u></a
+          >.
         </p>
         <p v-show="isFrench">
           Trouver le code sur
-          <a href="https://github.com/dina-shoham/le-wordle" target="_blank">Github</a>, ou
-          essayez-le <a href="https://shoham.ca/dina/le-wordle/" target="_blank">ici</a>.
+          <a href="https://github.com/dina-shoham/le-wordle" target="_blank"><u>Github</u></a
+          >, ou essayez-le <a href="https://shoham.ca/dina/le-wordle/" target="_blank"><u>ici</u></a
+          >.
         </p>
       </div>
     </div>
@@ -52,11 +55,13 @@ defineProps({
 
         <p v-show="!isFrench">
           You're visiting it right now! You can also check out the source code on
-          <a href="https://github.com/dina-shoham/personal-website" target="_blank">Github</a>.
+          <a href="https://github.com/dina-shoham/personal-website" target="_blank"><u>Github</u></a
+          >.
         </p>
         <p v-show="isFrench">
           Vous y êtes maintenant ! Vous pouvez également trouver le code sur
-          <a href="https://github.com/dina-shoham/personal-website" target="_blank">Github</a>.
+          <a href="https://github.com/dina-shoham/personal-website" target="_blank"><u>Github</u></a
+          >.
         </p>
       </div>
     </div>
@@ -85,13 +90,13 @@ defineProps({
         <p v-show="!isFrench">
           The source code is on
           <a href="https://github.com/McGill-ECSE321-Fall2020/project-group-16" target="_blank"
-            >Github</a
+            ><u>Github</u></a
           >.
         </p>
         <p v-show="isFrench">
           Le code est sur
           <a href="https://github.com/McGill-ECSE321-Fall2020/project-group-16" target="_blank"
-            >Github</a
+            ><u>Github</u></a
           >.
         </p>
       </div>

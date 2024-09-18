@@ -158,13 +158,13 @@ defineProps({
       <a
         href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_english.pdf"
         target="_blank"
-        >English</a
+        ><u>English</u></a
       >
       or
       <a
         href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_francais.pdf"
         target="_blank"
-        >French</a
+        ><u>French</u></a
       >.
     </p>
 
@@ -173,13 +173,13 @@ defineProps({
       <a
         href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_francais.pdf"
         target="_blank"
-        >français</a
+        ><u>français</u></a
       >
       ou en
       <a
         href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_english.pdf"
         target="_blank"
-        >anglais</a
+        ><u>anglais</u></a
       >
       .
     </p>

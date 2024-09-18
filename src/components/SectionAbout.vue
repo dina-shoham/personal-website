@@ -15,7 +15,7 @@ defineProps({
     </p>
     <p v-show="isFrench">
       Une récente diplômée de l’Université McGill, je suis à la recherche d’un poste en
-      développement logiciel ou inginiérie logicielle à partir de l’automne 2024. Motivée à mettre à
+      développement logiciel ou ingéniérie logicielle à partir de l’automne 2024. Motivée à mettre à
       profit mon expérience dans le développement front-end acquise dans le secteur, mes compétences
       en programmation et mes qualités relationnelles développés pendant mes études, afin
       d’apprendre de nouvelles compétences, langues et domaines.
