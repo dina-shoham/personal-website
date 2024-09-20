@@ -10,6 +10,8 @@ import LanguageToggle from './components/LanguageToggle.vue'
 import { ref } from 'vue'
 
 const isFrench = ref(false)
+
+console.log(window.navigator.language)
 </script>
 
 <template>
