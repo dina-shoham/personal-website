@@ -9,6 +9,41 @@ defineProps({
 <template>
   <div class="container">
     <ul v-show="!isFrench" class="timeline">
+      <li class="event" data-date="Dec 2024 - present">
+        <p>
+          <b>Full Stack Analyst</b>,
+          <a href="https://www.accenture.com/" target="_blank"
+            >Accenture
+            <img src="/src/assets/arrow-black.png" />
+            <img src="/src/assets/arrow-red.png" />
+          </a>
+        </p>
+        <p>
+          Full stack development for client accounts.
+        </p>
+        <br/>
+        <!-- <Bubble text="React"></Bubble>
+        <Bubble text="TypeScript"></Bubble>
+        <Bubble text="gRPC-Web"></Bubble> -->
+      </li>
+
+      <li class="event" data-date="Aug 2023-Jul 2024">
+        <p>
+          <b>Personal Goal Pursuit: Year Abroad</b>,
+          Versailles, France
+        </p>
+        <p>
+          A post-graduation year in France, spent studying the language 
+          (<a href="https://www.versailles.fr/50/culture/universite-ouverte-de-versailles.htm"><u>Université Ouverte de Versailles</u></a>) 
+          and working as an au pair. 
+        </p>
+        <p>
+          Succesfully passed the C1 level DALF (Diplôme Approfondi de Langue Française), a diploma awarded by the 
+          French Ministry of Education, representing an advanced level of fluency.
+        </p>
+        <br/>
+      </li>
+
       <li class="event" data-date="May - Aug 2022">
         <p>
           <b>Software Development Intern</b>,

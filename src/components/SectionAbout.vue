@@ -7,11 +7,14 @@ defineProps({
 <template>
   <div class="container">
     <p v-show="!isFrench">
-      Hi, I'm Dina! I'm a recent software engineering graduate from McGill University. I've just
-      returned to Canada after a year abroad in Versailles, France, where I was studying the
-      language and working as an au pair.
+      Hello! I'm a Montréal-based software engineer, specializing in web development. 
+      I'm currently working as a full stack analyst at Accenture. 
     </p>
-    <p v-show="!isFrench">
+    <p v-show="isFrench">
+      Bonjour ! Je suis une ingénieure en logiciel basée à Montréal. Je travaille actuellement 
+      comme full stack analyste chez Accenture.
+    </p>
+    <!-- <p v-show="!isFrench">
       I am currently seeking software development or software engineering opportunities beginning in
       fall 2024. I am eager to leverage my industry experience in front-end development, the
       programming and interpersonal skills I developed through my studies, and an enthusiasm for new
@@ -29,7 +32,7 @@ defineProps({
       le développement front-end acquise dans le secteur, mes compétences en programmation et mes
       qualités relationnelles développés pendant mes études, ainsi qu'un enthousiasme pour des
       nouvelles expériences que j'ai découvert pendant mon année en France.
-    </p>
+    </p> -->
   </div>
 </template>
 
