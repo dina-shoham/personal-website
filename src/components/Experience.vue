@@ -1,5 +1,6 @@
 <script setup lang="js">
   import SkillItem from './SkillItem.vue';
+  import SkillItemLink from './SkillItemLink.vue';
 </script>
 
 <template>
@@ -29,6 +30,7 @@
           <div class="event-content">
             <p>Year Abroad</p>
             <p>Versailles, France</p>
+            <p></p>
             <SkillItem text="DALF C1 Diploma"></SkillItem>
           </div>
         </li>
@@ -41,7 +43,7 @@
           <div class="event-content">
             <p>Software Development Intern</p>
             <p><a href="https://www.nuance.com/index.html" target="_blank">Nuance Communications</a></p>
-            <SkillItem text="React"></SkillItem>
+            <SkillItem text="React">/</SkillItem>
             <SkillItem text="TypeScript"></SkillItem>
             <SkillItem text="gRPC-Web"></SkillItem>
           </div>
@@ -57,6 +59,8 @@
             <p><a href="https://www.arolytics.com/" target="_blank">Arolytics</a></p>
             <SkillItem text="React"></SkillItem>
             <SkillItem text="JavaScript"></SkillItem>
+            <SkillItem text="Jest"></SkillItem>
+            <SkillItem text="Bash"></SkillItem>
           </div>
         </li>
 
@@ -68,13 +72,12 @@
           <div class="event-content">
             <p>Research Intern</p>
             <p><a href="https://schulich.ucalgary.ca/electrical-software" target="_blank">University of Calgary Dept. of Software Engineering</a></p>
-            <SkillItem text="SPSS"></SkillItem>
-            <SkillItem text="LaTeX"></SkillItem>
-            <SkillItem text="Research Paper"></SkillItem>
+            <SkillItemLink text="Research Paper" link="https://cdio.org/knowledge-library/documents/student-perceptions-project-based-learning-software-engineering-course"></SkillItemLink>
           </div>
         </li>
 
       </ul>
+      <p>View my full CV <a href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_2025_english.pdf" target="_blank">here</a>.</p>
     </div>
   </div>
 </template>
@@ -84,7 +87,6 @@
 
 .timeline {
   margin: 1rem 0rem 0rem 0rem;
-  /* background-color: palegoldenrod; */
   border-left-style: solid;
   border-left-width: 0.1rem;
   border-left-color: var(--main-color);
@@ -92,22 +94,19 @@
 
 .event {
   margin: 0rem 0rem 2rem -1.9rem; 
-  /* 1.9rem aligns dots onto line */
+  /* -1.9rem aligns dots onto line */
 }
 
 .event-date {
-  /* margin: 0rem 0rem 0rem 0rem; */
   text-align: right;
   color: var(--secondary-color);
-  /* background-color: pink; */
 }
 
 .event-content {
   margin: -1.7rem 0rem 0rem 0rem;
-  /* background-color: aqua; */
 }
 
 p {
-  margin: 0.5rem;
+  margin: 0.5rem 0rem;
 }
 </style>

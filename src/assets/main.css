@@ -10,7 +10,6 @@
 
 html,
 body {
-  width: 100%;
   background-color: var(--background-color);
   font-family: 'Inter';
   font-weight: 400;
@@ -20,6 +19,7 @@ body {
 
 #app {
   margin: 5rem;
+  align-content: center;
 }
 
 h1 {
@@ -69,6 +69,7 @@ a:hover {
   padding:2rem;
   width: 70%;
   min-width: 16rem;
+  max-width: 40rem;
 }
 
 .skill-item {
