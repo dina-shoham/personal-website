@@ -93,8 +93,9 @@
 }
 
 .event {
-  margin: 0rem 0rem 2rem -1.9rem; 
-  /* -1.9rem aligns dots onto line */
+  margin: 0rem 0rem 2rem -1.92rem; 
+  /* moving 1.9rem left aligns dots onto line, 
+     2rem on bottom just adds space bw events */
 }
 
 .event-date {
@@ -104,6 +105,7 @@
 
 .event-content {
   margin: -1.7rem 0rem 0rem 0rem;
+  /* moving up 1.7 to align text w dates (basically shifting up one line + spacing) */
 }
 
 p {
