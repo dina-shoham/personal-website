@@ -80,7 +80,7 @@
         </li>
 
       </ul>
-      <p>View my full CV <a href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_2025_english.pdf" target="_blank">here</a>.</p>
+      <p>View my full CV <a href="https://github.com/dina-shoham/cv/blob/main/dina_shoham_cv_2026_english.pdf" target="_blank">here</a>.</p>
     </div>
   </div>
 </template>
