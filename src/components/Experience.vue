@@ -19,6 +19,9 @@
           <div class="event-content">
             <p>Full Stack Analyst</p>
             <p><a href="https://www.accenture.com/" target="_blank">Accenture</a></p>
+            <SkillItem text="Java"></SkillItem>
+            <SkillItem text="AWS"></SkillItem>
+            <SkillItem text="Github Actions"></SkillItem>
           </div>
         </li>
 

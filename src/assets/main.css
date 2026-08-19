@@ -2,9 +2,10 @@
 
 :root {
   --main-color: #000;
-  --background-color: #ffffff;
-  --accent-color: #b4270d;
-  --bubble-color: #e6e6e6;
+  /* --background-color: #EAE6E4; */
+  --background-color: #fff;
+  --accent-color: #B4270D;
+  --bubble-color: #B4270D40;
   --secondary-color: #585858;
 }
 
@@ -26,6 +27,7 @@ h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0.5rem 0rem 0rem 0rem;
+  color: var(--accent-color);
 }
 
 h2 {
